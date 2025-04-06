@@ -1,4 +1,4 @@
-import src.OvningsUppgift1.PriceableWithVAT25;
+import src.OvningsUppgift1;
 
 public class Recording extends Item implements PriceableWithVAT25 {
 

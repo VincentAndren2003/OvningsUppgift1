@@ -1,6 +1,6 @@
 package src.OvningsUppgift1;
 
-public class Recording extends Item implements PriceableWithVAT25 {
+public abstract class Recording extends Item implements PriceableWithVAT25 {
 
     private String artist;
     private int year;

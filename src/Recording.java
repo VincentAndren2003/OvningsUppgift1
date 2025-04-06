@@ -1,4 +1,4 @@
-package OvningsUppgift1.src;
+import OvningsUppgift1.src.Item;
 
 public abstract class Recording extends Item implements PriceableWithVAT25 {
 

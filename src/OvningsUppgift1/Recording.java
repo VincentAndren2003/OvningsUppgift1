@@ -14,11 +14,20 @@ public class Recording extends Item implements PriceableWithVAT25 {
         this.condition = condition;
         this.price = price;
     }
-    public String getArtist() {
-        return artist;
-    }
 
     public String getType(){
         return "Type";
+    }
+    public String getArtist() {
+        return artist;
+    }
+    public int getYear() {
+        return year;
+    }
+    public int getCondition() {
+        return condition;
+    }
+    public double getPrice() {
+        return price;
     }
 }

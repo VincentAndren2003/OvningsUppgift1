@@ -6,7 +6,6 @@ public class CompactDisc extends Recording {
         super(name, artist, year, condition, price);
     }
 
-
     private String getType(){
         return "CD";
     }

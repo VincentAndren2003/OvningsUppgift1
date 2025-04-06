@@ -1,6 +1,6 @@
 package OvningsUppgift1;
 
-public abstract class Item implements interface Priceable {
+public abstract class Item implements Priceable {
     String name;
 
     public Item(String name){

@@ -1,10 +1,11 @@
 public abstract class Book extends Item implements PriceableWithVAT6{
-    private String author;
-    private double price;
-    private boolean bound;
+
+    private final String author;
+    private final double price;
+    private final boolean bound;
 
     public Book(String name, String author, double price, boolean bound){
-        super(name);
+        super(name); // Ensures the required parameter 'name' is passed to the Item constructor
         this.author = author;
         this.price = price;
         this.bound = bound;
@@ -16,7 +17,7 @@ public abstract class Book extends Item implements PriceableWithVAT6{
     }
 
     private boolean bound(){
-        if (this.bound){
+        if(this.bound){
             return true;
         }
         return false;

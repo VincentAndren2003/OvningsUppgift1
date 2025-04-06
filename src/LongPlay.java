@@ -1,5 +1,3 @@
-import OvningsUppgift1.src.Recording;
-
 public abstract class LongPlay extends Recording {
 
     public LongPlay(String name, String artist, int year, int condition, double price){

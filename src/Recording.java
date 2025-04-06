@@ -1,5 +1,3 @@
-import OvningsUppgift1.src.Item;
-
 public abstract class Recording extends Item implements PriceableWithVAT25 {
 
     private String artist;

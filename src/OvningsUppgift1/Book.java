@@ -14,12 +14,12 @@ public class Book implements interface PriceableWithVAT6 {
     }
 
 
-    private final double price(){
+    private double price(){
         return price;
     }
 
     private boolean bound(){
-        if (bound){
+        if (this.bound){
             return true;
         }
         return false;
@@ -29,7 +29,10 @@ public class Book implements interface PriceableWithVAT6 {
         return author;
     }
 
-    public double getPrice(Book book){
+    public double getPrice(){
+        if (this.bound()){
+            return price * 1.3;
+        }
         return price;
     }
 

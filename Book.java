@@ -13,26 +13,28 @@ public class Book implements interface PriceableWithVAT6 {
         this.bound = bound;
     }
 
-    public String getType(){
-        return "Book";
-    }
 
-    public int price(){
+    private final double price(){
         return price;
     }
 
-    public boolean bound(){
-        if (boudn){
+    private boolean bound(){
+        if (bound){
             return true;
         }
         return false;
     }
 
-    public String author(){
+    private String author(){
         return author;
     }
 
-    public void getPrice(Book book){
-        prince = ....;
+    public double getPrice(Book book){
+        return price;
     }
+
+    public String getType(){
+        return "Book";
+    }
+
 }

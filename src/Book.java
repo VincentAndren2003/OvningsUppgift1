@@ -3,7 +3,7 @@ public abstract class Book extends Item {
     private double price;
     private boolean bound;
 
-    public Book(String name, String author, double price, boolean bound){
+    public Book(String name, String author, double price, boolean bound) {
         super(name);
         this.author = author;
         this.price = price;
@@ -11,29 +11,29 @@ public abstract class Book extends Item {
     }
 
 
-    private double price(){
+    private double price() {
         return price;
     }
 
-    private boolean bound(){
-        if (this.bound){
+    private boolean bound() {
+        if (this.bound) {
             return true;
         }
         return false;
     }
 
-    private String author(){
+    private String author() {
         return author;
     }
 
-    public double getPrice(){
-        if (this.bound()){
+    public double getPrice() {
+        if (this.bound()) {
             return price * 1.3;
         }
         return price;
     }
 
-    public String getType(){
+    public String getType() {
         return "Book";
     }
 

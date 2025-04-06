@@ -1,4 +1,6 @@
-public class Book extends Item implements PriceableWithVAT6 {
+import OvningsUppgift1.src.Item;
+
+public class Book extends Item {
     private String author;
     private double price;
     private boolean bound;

@@ -1,2 +1,2 @@
-public interface PriceableWithVAT6 {
+public interface PriceableWithVAT6 extends Priceable{
 }

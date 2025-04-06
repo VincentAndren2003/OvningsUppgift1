@@ -28,6 +28,6 @@ public class Recording extends Item implements PriceableWithVAT25 {
         return condition;
     }
     public double getPrice() {
-        return price;
+        return price * (condition / 10d);
     }
 }

@@ -6,6 +6,7 @@ public class CompactDisc extends Recording {
 
     }
 
+
     private String getType(){
         return "CD";
     }

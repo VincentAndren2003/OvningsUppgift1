@@ -1,6 +1,4 @@
 package OvningsUppgift1.src;
-
-
 import src.OvningsUppgift1.Item;
 
 public class Book extends Item implements PriceableWithVAT6 {

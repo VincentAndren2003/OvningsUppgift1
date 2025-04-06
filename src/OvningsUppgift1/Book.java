@@ -1,6 +1,6 @@
 package OvningsUppgift1;
-
-public class Book implements interface PriceableWithVAT6 {
+// implements interface PriceableWithVAT6
+public class Book extends Item {
     private String name;
     private String author;
     private double price;

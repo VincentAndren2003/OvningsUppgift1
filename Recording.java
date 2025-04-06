@@ -1,4 +1,4 @@
-public class Recording extends Item {
+public class Recording extends Item implements PriceableWithVAT25{
 
     private String artist;
     private int year;

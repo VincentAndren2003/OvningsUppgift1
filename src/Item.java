@@ -1,5 +1,3 @@
-package OvningsUppgift1.src;
-
 public abstract class Item implements Priceable {
     String name;
 

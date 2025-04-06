@@ -1,6 +1,4 @@
-package OvningsUppgift1;
-
-public class Recording extends OvningsUppgift1.Item {
+public class Recording extends Item {
 
     private String artist;
     private int year;
@@ -8,6 +6,7 @@ public class Recording extends OvningsUppgift1.Item {
     private double price;
 
     public Recording (String name, String artist, int year, int condition, double price) {
+        this.name = name;
         this.artist = artist;
         this.year = year;
         this.condition = condition;

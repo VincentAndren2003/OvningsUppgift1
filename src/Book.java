@@ -12,9 +12,7 @@ public abstract class Book extends Item implements PriceableWithVAT6{
     }
 
 
-    private double price(){
-        return price;
-    }
+    private double price(){return price;}
 
     private boolean bound(){
         if(this.bound){
@@ -23,9 +21,7 @@ public abstract class Book extends Item implements PriceableWithVAT6{
         return false;
     }
 
-    private String author(){
-        return author;
-    }
+    private String author(){return author;}
 
     public double getPrice(){
         if (this.bound()){
@@ -34,8 +30,6 @@ public abstract class Book extends Item implements PriceableWithVAT6{
         return price;
     }
 
-    public String getType(){
-        return "Book";
-    }
+    public String getType(){return "Book"; }
 
 }

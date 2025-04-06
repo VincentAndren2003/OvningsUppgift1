@@ -1,2 +1,4 @@
-public interface PriceableWithVAT6 extends Priceable{
+import OvningsUppgift1.src.Priceable;
+
+public interface PriceableWithVAT6 extends Priceable {
 }

@@ -1,5 +1,6 @@
-package OvningsUppgift1;
+package OvningsUppgift1.src.OvningsUppgift1;
 // implements interface PriceableWithVAT6
+
 public class Book extends Item {
     private String name;
     private String author;

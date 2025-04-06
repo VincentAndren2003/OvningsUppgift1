@@ -1,5 +1,5 @@
 package src.OvningsUppgift1;
 
-public interface PriceableWithVAT25 {
-    public double getVAT();
+public interface PriceableWithVAT25 extends Priceable {
+    //public double getVAT();
 }

@@ -15,9 +15,8 @@ public abstract class Recording extends Item implements PriceableWithVAT25 {
         this.price = price;
     }
 
-    public String getType(){
-        return "Type";
-    }
+    public abstract String getType();
+
     public String getArtist() {
         return artist;
     }

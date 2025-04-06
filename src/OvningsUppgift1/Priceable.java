@@ -1,7 +1,7 @@
 package src.OvningsUppgift1;
 
 public interface Priceable {
-    public double getPrice();
-    public double getVAT();
-    public double getPriceWithVAT();
+    public abstract double getPrice();
+    public abstract double getVAT();
+    public abstract double getPriceWithVAT();
 }

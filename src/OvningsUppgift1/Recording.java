@@ -1,4 +1,4 @@
-import src.OvningsUppgift1;
+package src.OvningsUppgift1;
 
 public class Recording extends Item implements PriceableWithVAT25 {
 
@@ -8,7 +8,7 @@ public class Recording extends Item implements PriceableWithVAT25 {
     private double price;
 
     public Recording (String name, String artist, int year, int condition, double price) {
-        this.name = name;
+        super(name);
         this.artist = artist;
         this.year = year;
         this.condition = condition;

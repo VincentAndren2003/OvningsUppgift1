@@ -1,4 +1,4 @@
-package src.OvningsUppgift1;
+import OvningsUppgift1.src.*;
 
 public class CompactDisc extends Recording {
 

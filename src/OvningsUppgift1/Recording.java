@@ -1,4 +1,6 @@
-public class Recording extends Item {
+import src.OvningsUppgift1.PriceableWithVAT25;
+
+public class Recording extends Item implements PriceableWithVAT25 {
 
     private String artist;
     private int year;

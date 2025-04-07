@@ -5,6 +5,11 @@ public class Order {
     private static long counter;
     private final ArrayList<Item> items = new ArrayList<Item>();
 
+    public Order(Item[] items){
+        for(Item item : items){
+            this.items.add(item);
+        }
+    }
     public String getReciept(){
         return "Reciept";
     }

@@ -2,7 +2,7 @@ public abstract class Recording extends Item implements PriceableWithVAT25 {
 
     private final String artist;
     private final int year;
-    private final int condition;
+    private int condition;
     private final double price;
 
     public Recording(String name, String artist, int year, int condition, double price) {

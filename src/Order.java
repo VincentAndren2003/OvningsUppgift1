@@ -15,7 +15,11 @@ public class Order {
     }
 
     public String getReciept() {
-        return "Reciept";
+        Stringbuilder reciept = new Stringbuilder();
+        reciept.add("Receipt for order #" + orderNumber);
+        reciept.add("\n------");
+        reciept.add()
+        return reciept.toString();
     }
 
     public double getTotalValuePlusVAT() {

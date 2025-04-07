@@ -1,4 +1,4 @@
-public abstract class LongPlay extends Recording {
+public class LongPlay extends Recording {
     private double price;
 
     public LongPlay(String name, String artist, int year, int condition, double price) {
@@ -7,7 +7,7 @@ public abstract class LongPlay extends Recording {
     }
 
     public double getPrice(){
-        return Recording.getPrice() + (2025 - Recording.getYear())*5 ;
+        return getPrice() + (2025 - getYear())*5 ;
     }
 
     public String getType() {

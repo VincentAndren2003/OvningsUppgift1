@@ -1,4 +1,4 @@
-public abstract class CompactDisc extends Recording {
+public class CompactDisc extends Recording {
 
     public CompactDisc(String name, String artist, int year, int condition, double price) {
         super(name, artist, year, condition, price);

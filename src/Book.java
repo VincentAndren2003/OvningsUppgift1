@@ -1,4 +1,4 @@
-public abstract class Book extends Item implements PriceableWithVAT6{
+public class Book extends Item implements PriceableWithVAT6{
 
     private final String author;
     private final double price;

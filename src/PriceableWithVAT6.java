@@ -1,3 +1,5 @@
 public interface PriceableWithVAT6 extends Priceable {
-    public double getVAT();
+    public default double getVAT(){
+        return 0.06d;
+    };
 }

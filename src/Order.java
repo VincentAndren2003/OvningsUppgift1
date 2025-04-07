@@ -7,7 +7,9 @@ public class Order {
 
     public Order(Item[] items){
         for(Item item : items){
+            // double totalPrice = item.getPrice();
             this.items.add(item);
+
         }
     }
     public String getReciept(){

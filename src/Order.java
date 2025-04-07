@@ -23,7 +23,7 @@ public class Order {
             receipt.append(item + "\n");
         }
         receipt.append("Total excl. VAT:" + getTotalValue()+"\n");
-        receipt.append("Total incl. VAT." + getTotalValuePlusVAT() + "\n");
+        receipt.append("Total incl. VAT:" + getTotalValuePlusVAT() + "\n");
 
         return receipt.toString();
     }

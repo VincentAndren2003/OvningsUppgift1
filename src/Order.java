@@ -14,17 +14,17 @@ public class Order {
         orderNumber = counter;
     }
 
-    public String getReciept() {
-        StringBuilder reciept = new StringBuilder();
-        reciept.append("Receipt for order #" + orderNumber);
-        reciept.append("\n------");
+    public String getReceipt() {
+        StringBuilder receipt = new StringBuilder();
+        receipt.append("Receipt for order #" + orderNumber);
+        receipt.append("\n------");
         for (Item item : items) {
-            reciept.append(item + "\n");
+            receipt.append(item + "\n");
         }
-        reciept.append("Total excl. VAT:" + getTotalValue());
-        reciept.append("\n Total incl. VAT." + getTotalValuePlusVAT());
+        receipt.append("Total excl. VAT:" + getTotalValue());
+        receipt.append("\n Total incl. VAT." + getTotalValuePlusVAT());
 
-        return reciept.toString();
+        return receipt.toString();
     }
 
     public double getTotalValuePlusVAT() {

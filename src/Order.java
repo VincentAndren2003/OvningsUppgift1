@@ -14,6 +14,7 @@ public class Order {
     public String getReciept(){
         return "Reciept";
     }
+
     public double getTotalValuePlusVAT(){
         for(Item item : items){
             double totalPrice =+ item.getPrice();
@@ -21,6 +22,6 @@ public class Order {
         return totalPrice * 1.25;
     }
     public double getTotalValue(){
-        return 1;
+        return getTotalValuePlusVAT() * 0.8;
     }
 }

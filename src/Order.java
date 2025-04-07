@@ -15,13 +15,12 @@ public class Order {
     }
 
     public String getReciept() {
-        Stringbuilder reciept = new Stringbuilder();
+        StringBuilder reciept = new StringBuilder();
         reciept.append("Receipt for order #" + orderNumber);
         reciept.append("\n------");
         for (Item item : items) {
-            reciept.append(item.toString);
+            reciept.append(item.toString + "\n");
         }
-        reciept.append("\n");
         reciept.append("Total excl. VAT:" + getTotalValue());
         reciept.append("\n Total incl. VAT." + getTotalValuePlusVAT());
 

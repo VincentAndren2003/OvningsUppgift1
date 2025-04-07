@@ -16,8 +16,8 @@ public class Order {
 
     public String getReceipt() {
         StringBuilder receipt = new StringBuilder();
-        receipt.append("Receipt for order #" + orderNumber);
-        receipt.append("\n------");
+        receipt.append("Receipt for order #" + orderNumber+ "\n");
+        receipt.append("------\n");
         for (Item item : items) {
             receipt.append(item + "\n");
         }

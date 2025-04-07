@@ -21,6 +21,9 @@ public class Order {
         for (Item item : items) {
             reciept.append(item.toString);
         }
+        reciept.append("\n");
+        reciept.append("Total excl. VAT:" + getTotalValue());
+        reciept.append("\n Total incl. VAT." + getTotalValuePlusVAT());
 
         return reciept.toString();
     }

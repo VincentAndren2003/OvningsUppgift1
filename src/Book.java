@@ -26,13 +26,13 @@ public class Book extends Item implements PriceableWithVAT6 {
         return price;
     }
 
-    public String getType() {
+    private String getType() {
         return "Book";
     }
 
     @Override
     public String toString() {
-        return  "Book: " +
+        return  getType() + ": " +
                 "name=" + getName() +
                 ", author =" + "'" + getAuthor() + "'" +
                 ", bound=" + getBound() +

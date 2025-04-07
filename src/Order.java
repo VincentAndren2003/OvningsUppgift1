@@ -19,7 +19,7 @@ public class Order {
         reciept.append("Receipt for order #" + orderNumber);
         reciept.append("\n------");
         for (Item item : items) {
-            reciept.append(item.toString + "\n");
+            reciept.append(item + "\n");
         }
         reciept.append("Total excl. VAT:" + getTotalValue());
         reciept.append("\n Total incl. VAT." + getTotalValuePlusVAT());

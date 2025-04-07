@@ -36,7 +36,8 @@ public class Book extends Item implements PriceableWithVAT6 {
                 "name=" + getName() +
                 ", author =" + "'" + getAuthor() + "'" +
                 ", bound=" + getBound() +
-                ", price=" + getPrice();
+                ", price=" + getPrice() +
+                ", price+vat=" + getPriceWithVAT();
     }
 
 }

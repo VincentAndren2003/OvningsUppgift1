@@ -1,27 +1,34 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Order {
     private final long orderNumber = 1;
     private static long counter;
-    private final ArrayList<Item> items = new ArrayList<Item>();
+    private final List<Item> items = new ArrayList<Item>();
 
-    public Order(Item[] items){
-        for(Item item : items){
+    public Order(Item[] items) {
+        for (Item item : items) {
             this.items.add(item);
-
         }
     }
-    public String getReciept(){
+
+    public String getReciept() {
         return "Reciept";
     }
 
-    public double getTotalValuePlusVAT(){
-        for(Item item : items){
-            double totalPrice =+ item.getPrice();
+    public double getTotalValuePlusVAT() {
+        double totalPrice = 0.0;
+        for (Item item : items) {
+            totalPrice += item.getPriceWithVAT();
         }
-        return totalPrice * 1.25;
+        return totalPrice;
     }
-    public double getTotalValue(){
-        return getTotalValuePlusVAT() * 0.8;
+
+    public double getTotalValue() {
+        double totalPrice = 0.0;
+        for (Item item : items) {
+            totalPrice += item.getPrice();
+        }
+        return totalPrice;
     }
 }

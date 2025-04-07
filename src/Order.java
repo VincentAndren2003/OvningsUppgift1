@@ -7,7 +7,6 @@ public class Order {
 
     public Order(Item[] items){
         for(Item item : items){
-            // double totalPrice =+ item.getPrice();
             this.items.add(item);
 
         }
@@ -16,7 +15,10 @@ public class Order {
         return "Reciept";
     }
     public double getTotalValuePlusVAT(){
-        return 1;
+        for(Item item : items){
+            double totalPrice =+ item.getPrice();
+        }
+        return totalPrice * 1.25;
     }
     public double getTotalValue(){
         return 1;

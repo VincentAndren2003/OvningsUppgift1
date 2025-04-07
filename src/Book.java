@@ -32,4 +32,12 @@ public class Book extends Item implements PriceableWithVAT6{
 
     public String getType(){return "Book"; }
 
+    @Override
+    public String toString(){
+        return "name=" + this.name +
+                ", author =" + this.author +
+                ", bound=" + this.bound() +
+                ", price=" + this.price;
+    }
+
 }

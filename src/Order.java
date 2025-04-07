@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private final long orderNumber = 1;
+    private final long orderNumber;
     private static long counter;
     private final List<Item> items = new ArrayList<Item>();
 
@@ -10,6 +10,8 @@ public class Order {
         for (Item item : items) {
             this.items.add(item);
         }
+        counter ++;
+        orderNumber = counter;
     }
 
     public String getReciept() {

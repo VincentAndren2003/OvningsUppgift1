@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Order {
     private static long counter;
-
     private final long orderNumber;
     private final List<Item> items = new ArrayList<Item>();
 
@@ -11,18 +10,18 @@ public class Order {
         for (Item item : items) {
             this.items.add(item);
         }
-        counter ++;
+        counter++;
         orderNumber = counter;
     }
 
     public String getReceipt() {
         StringBuilder receipt = new StringBuilder();
-        receipt.append("Receipt for order #" + orderNumber+ "\n");
+        receipt.append("Receipt for order #" + orderNumber + "\n");
         receipt.append("------\n");
         for (Item item : items) {
             receipt.append(item + "\n");
         }
-        receipt.append("Total excl. VAT:" + getTotalValue()+"\n");
+        receipt.append("Total excl. VAT:" + getTotalValue() + "\n");
         receipt.append("Total incl. VAT:" + getTotalValuePlusVAT() + "\n");
 
         return receipt.toString();

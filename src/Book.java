@@ -5,7 +5,7 @@ public class Book extends Item implements PriceableWithVAT6 {
     private final boolean bound;
 
     public Book(String name, String author, double price, boolean bound) {
-        super(name); // Ensures the required parameter 'name' is passed to the Item constructor
+        super(name);
         this.author = author;
         this.price = price;
         this.bound = bound;

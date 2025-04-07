@@ -2,8 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private final long orderNumber;
     private static long counter;
+
+    private final long orderNumber;
     private final List<Item> items = new ArrayList<Item>();
 
     public Order(Item... items) {

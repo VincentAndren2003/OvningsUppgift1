@@ -16,9 +16,12 @@ public class Order {
 
     public String getReciept() {
         Stringbuilder reciept = new Stringbuilder();
-        reciept.add("Receipt for order #" + orderNumber);
-        reciept.add("\n------");
-        reciept.add()
+        reciept.append("Receipt for order #" + orderNumber);
+        reciept.append("\n------");
+        for (Item item : items) {
+            reciept.append(item.toString);
+        }
+
         return reciept.toString();
     }
 

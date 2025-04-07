@@ -7,7 +7,7 @@ public class LongPlay extends Recording {
     }
 
     public double getPrice(){
-        return getPrice() + (2025 - getYear())*5 ;
+        return super.getPrice() + (2025 - getYear())*5 ;
     }
 
     public String getType() {

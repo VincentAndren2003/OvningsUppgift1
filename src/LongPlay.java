@@ -15,6 +15,8 @@ public abstract class LongPlay extends Recording {
     }
 
     public double getPrice(){
+        startCount = Recording.getYear();
+        newPrice = Recording.getPrice +
         return price;
     }
 
